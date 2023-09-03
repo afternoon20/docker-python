@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  debain:
+    build: .
+    container_name: python
+    hostname: python
+    working_dir: /app
+    volumes:
+      - ../src:/app
+    tty: true
